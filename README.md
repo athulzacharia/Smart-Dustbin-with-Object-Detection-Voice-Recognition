@@ -2,8 +2,12 @@
 
 **Overview**
 
-- **Purpose:** Detect waste types (paper, plastic, etc.) from camera images and control a smart dustbin (open lid, count items, announce status).
-- **Main scripts:** `smart_dustbin_smooth.py` (main app), `webcam_fresh.py` (demo), `train_roboflow.py` + `data_roboflow.yaml` (training).
+- **Purpose:** Detect waste types (paper, plastic, etc.) from camera images OR voice commands and control a smart dustbin (open lid, count items, announce status).
+- **Main scripts:** 
+  - `smart_dustbin_smooth.py` — Camera-based detection (main app)
+  - `smart_dustbin_voice.py` — Voice-controlled (say "plastic" or "paper")
+  - `webcam_fresh.py` — Simple demo
+  - `train_roboflow.py` + `data_roboflow.yaml` — Training pipeline
 
 **Quick Start**
 
@@ -14,10 +18,16 @@ cd "E:\minor project\try 1"
 python -m pip install -r requirements.txt
 ```
 
-- Run the main application:
+- Run the camera-based detection:
 
 ```powershell
 python smart_dustbin_smooth.py
+```
+
+- Run voice control mode:
+
+```powershell
+python smart_dustbin_voice.py
 ```
 
 - Run the webcam demo:
@@ -61,11 +71,13 @@ python webcam_fresh.py
 
 **Files You Care About**
 
-- `smart_dustbin_smooth.py` — Main runtime (inference + behavior).
-- `webcam_fresh.py` — Simple demo to test detection.
-- `train_roboflow.py` & `data_roboflow.yaml` — Training pipeline configuration.
-- `CLEANUP_SUMMARY.md` — Project cleanup notes.
-- `requirements.txt` — Python dependencies.
+- `smart_dustbin_smooth.py` — Camera-based detection (main app)
+- `smart_dustbin_voice.py` — Voice control mode (say "plastic" or "paper")
+- `webcam_fresh.py` — Simple demo to test detection
+- `train_roboflow.py` & `data_roboflow.yaml` — Training pipeline configuration
+- `VOICE_MODE_GUIDE.md` — Voice control setup and usage
+- `CLEANUP_SUMMARY.md` — Project cleanup notes
+- `requirements.txt` — Python dependencies
 
 **Where to Change Behavior**
 
