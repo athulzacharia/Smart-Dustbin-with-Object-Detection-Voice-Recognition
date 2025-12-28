@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+
+# YOLO
+runs/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Images and Videos (optional - uncomment if you don't want to track outputs)
+# *.jpg
+# *.jpeg
+# *.png
+# *.mp4
+# *.avi
+
+# Logs
+*.log
+
+# Output files
+output_*.jpg
+output_*.mp4
+capture_*.jpg
+result_*.jpg

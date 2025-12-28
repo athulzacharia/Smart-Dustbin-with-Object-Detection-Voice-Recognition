@@ -1,0 +1,16 @@
+# Roboflow Paper and Plastic Detection Dataset
+# High-quality labeled dataset with proper bounding boxes
+
+path: C:/Users/athul/Downloads/Paper and Plastic Detection.v4i.yolov11
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 2
+names: ['paper', 'plastic bottle']
+
+# Dataset Info:
+# - 11,639 training images
+# - 1,107 validation images  
+# - 561 test images
+# - Professional Roboflow labels with accurate bounding boxes
